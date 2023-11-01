@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" 
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="style.css">
+    <title>James Feng Portfolio</title>
+</head>
+<body>
+    <!-- NavBar - becomes hamburger when width break point is reached-->
+    <nav class="navbar navbar-expand-lg bg-dark navbar-dark py-3 fixed-top">
+        <div class="container">
+      
+            <button class="navbar-toggler" 
+                type="button" 
+                data-bs-toggle="collapse" 
+                data-bs-target="#navmenu">
+
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- Collapse behavior -->
+            <div class="collapse navbar-collapse" id="navmenu">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a href="#about" class="nav-link">About Me</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#projects" class="nav-link">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#contact" class="nav-link">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="media/Resume.pdf" target="_blank" class="nav-link">Resume</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Showcase -->
+    <section id="about" class="bg-dark text-light p-5 p-lg-0 pt-lg-5 text-center text-sm-start">
+        <div class="container">
+            <div class="d-sm-flex align-items-center justify-content-between">
+                <div>
+                    <h1>James Feng</h1>
+                    <p class="lead my-4">
+                        I'm a 4th year student at Rochester Institute Technology majoring in Game Design and Development. 
+                        I think it's amazing how games can create fun and interactive experiences that can be commonly shared around the world.   
+                        Looking to express my creativity by making things that will be used by many. Seeking a game design or programming co-op. 
+                        I'm eager to learn and gain professional experience. 
+                    </p>
+                    <a href="media/Resume.pdf" target="_blank" class="btn btn-primary btn-lg mb-lg-5">Resume</a>
+                </div>
+                <img class="img-fluid rounded w-50 d-none d-md-block ms-3" id="profImg" src="img/Self.jpg" alt="">
+            </div>
+        </div>
+    </section>
+
+    <!-- Boxes -->
+    <section id="projects" class="p-5 bg-primary">
+        <div class="container">
+            <h2 class="text-center text-white mb-5">Projects</h2>
+            <div class="row text-center g-4">
+
+                <div class="col-md-6">
+                    <div class="card">
+                        <div class="card-body text-center">
+                            <img class="img-fluid" src="img/Sandbox.png" alt="">     
+                            <h3 class="card-title mb-3">
+                                Sandbox Battlefield
+                            </h3>
+                            <ul class="card-text text-center text-sm-start basicInfo">
+                                <li><b>Team Size:</b> 4</li>  
+                                <li><b>Type:</b> Autobattler Game</li>  
+                                <li><b>Skills:</b> C#, UI Design, Game Balance</li>  
+                                <li><b>Tools:</b> Unity, Visual Studio, Github, Trello</li>  
+                            </ul>
+                            <p class="card-text text-center text-sm-start collapse" id="sandCollapse">
+                                Developed in a production studio course, my role on this team was programming focused on the game's shop and game balancing. I learned to 
+                                make UI utilizing Unity's UI system. By taking feedback from external and internal playtest, I was able to iterate on the shop's UI and 
+                                functionalities. The feedback I got from the first major iteration of the shop was that it felt like too much was going on, hard to follow, not 
+                                intuitive and too much reading to do. The unit purchasing screen became a scrolling shop interface. Less cards are now on the screen at once and 
+                                it allowed for the size of unit cards to be increased. This size increase enabled me to add the stat information to the front of the cards and 
+                                get rid of the flip card functionality. Then I requested for art assets to replace stat text, such as "health", to reduce the amount 
+                                of reading required. The ability purchasing screen became a toybox inventory of purchased units where you can clearly see each unit that was 
+                                bought. Instead of having purchasable ability cards, having an upgrade button on the purchased unit makes for better association between the unit
+                                and its specific ability. Although there is less information about abilities, the ability names are pretty self explanatory and I opted for a 
+                                play and learn experience for the player that fits with the theme of playing with toys in a sandbox. Overall making the shop's flow more 
+                                streamlined for the user. Lastly, I made tool tips on the upgrade buttons to show the cost and ability names. Balancing units and abilities was
+                                a mixture of playtesting, and using a spreadsheet to find values that made people feel each unit served a purpose while the game's difficulty 
+                                increases.  
+                            </p>
+                            <a href="#sandCollapse" data-bs-toggle="collapse" class="btn btn-dark">Details</a>    
+                            <a href="https://saberfury.itch.io/sandbox-battlefield" target="_blank" class="btn btn-dark">Game Page</a>    
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-6">
+                    <div class="card">
+                        <div class="card-body text-center">
+                            <img class="img-fluid" src="img/Graves.jpg" alt="">     
+                            <h3 class="card-title mb-3">
+                                An Encroaching Sickness
+                            </h3>
+                            <ul class="card-text text-center text-sm-start basicInfo">
+                                <li><b>Team Size:</b> 5</li>  
+                                <li><b>Type:</b> Skyrim SE Mod</li>  
+                                <li><b>Skills:</b> Level Design</li>  
+                                <li><b>Tools:</b> Bethesda Creation Kit</li>  
+                            </ul>
+                            <p class="card-text text-center text-sm-start collapse" id="skyrimCollapse">
+                                An Encroaching Sickness is a Skyrim quest mod made for a modding class. My role in this team was designing and building a level.
+                                I learned how to use Bethesda's level editor in order to do this. The goal of the level is to have the player explore and 
+                                fight enemies in order to collect ingriedients to complete the quest. I placed rocks, dirt, vegetation and other environmental objects to try 
+                                making a cave that looks as natural as possible. Using props, I tried make rooms that communicated the narative and theme of the mod. Some
+                                rooms were meant to look like they had been attacked by monsters and others to look lived in but showing the scarcity of personal items that
+                                belong to the sick people living within the cave. In addition, I included a few mini environmental narratives for the player to discover. Such 
+                                as a couple's skeleton holding hands hidden away in a corner of a room behind piles of firewood, suggesting they were hiding from the monsters
+                                in the cave until they passed away.
+                            </p>
+                            <a href="#skyrimCollapse" data-bs-toggle="collapse" class="btn btn-dark">Details</a>    
+                            <a href="https://www.nexusmods.com/skyrimspecialedition/mods/59798" target="_blank" class="btn btn-dark">Game Page</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6">
+                    <div class="card">
+                        <div class="card-body text-center">
+                            <img class="img-fluid" src="img/Blob.png" alt="">     
+                            <h3 class="card-title mb-3">
+                                Blob Blob Game
+                            </h3>
+                            <ul class="card-text text-center text-sm-start basicInfo">
+                                <li><b>Team Size:</b> 4</li>  
+                                <li><b>Type:</b> Puzzle Game</li>  
+                                <li><b>Skills:</b> Level Design, Game Design</li>  
+                                <li><b>Tools:</b> Unity, Visual Studio, Github, Trello</li>  
+                            </ul>
+                            <p class="card-text text-center text-sm-start collapse" id="blobCollapse">
+                                Blob Blob Game is a 2D game about controlling blobs to solve puzzles. This game was originally a class project but we decided to continue 
+                                working on it over the course of the summer. In this team I communicated with team members to conceptualize mechanics to include 
+                                in the game. My main role was making levels and testing our mechanics for bugs since I was experimenting with mechanics the most. I tried to 
+                                create easy to difficult levels. When all the levels were finished, I went back over them to reorganize the levels so that the player learns
+                                mechanics and the various ways to work with them in the order we want them to. In addition, for the levels to progressively get more difficult
+                                but have some easier levels in between to prevent the player from feeling constantly stuck. For this project I learned how to use Trello for 
+                                better team organization, tasks prioritization and distribution.  
+                            </p>   
+                            <a href="#blobCollapse" data-bs-toggle="collapse" class="btn btn-dark">Details</a>   
+                            <a href="https://telepathicgrunt.itch.io/blob-blob-game" target="_blank" class="btn btn-dark">Game Page</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-6">
+                    <div class="card">
+                        <div class="card-body text-center">
+                            <img class="img-fluid" src="img/idle.png" alt="">     
+                            <h3 class="card-title mb-3">
+                                Idle Growth
+                            </h3>
+                            <ul class="card-text text-center text-sm-start basicInfo">
+                                <li><b>Team Size:</b> 1</li>  
+                                <li><b>Type:</b> Game Prototype</li>  
+                                <li><b>Skills:</b> HTML, CSS, JavaScript, Pixel Art, Wireframing</li>  
+                                <li><b>Tools:</b> Figma, Photoshop, Visual Studio Code</li>  
+                            </ul>
+                            <p class="card-text text-center text-sm-start collapse" id="demoCollapse">
+                            This is a prototype for a idle game made for a web class. The prototype demonstrates the art style, UI and a basic premise of the game being about 
+                            collecting resources to grow a village. Using Figma, I created wireframes to layout two screens for the game. A main screen showing the starting 
+                            village, resources in the game, number of workers for each resource and a button to get to the upgrade screen. In the upgrade screen, the player 
+                            can buy workers for each resource to increase the rate of earning the resource and click on a button to return to the main screen. I learned to use
+                            Pixi.js to render images onto the screen and I used howler.js to add background music. This was my first time making pixel art and I learned how to make it in Photoshop. Given the 2 weeks I had
+                            to do this project, I ended up spending too much time on trying to get the art to look good that I ended up not having enough time to get
+                            some of the mechanics I wanted to include. From this experience, I learned that for games it's best to prioritize mechanics first when just trying
+                            to make a playable prototype. 
+                            </p>      
+                            <a href="#demoCollapse" data-bs-toggle="collapse" class="btn btn-dark">Details</a>
+                            <a href="https://www.figma.com/file/ysaK4lB7QJpPGPJun3qyBS/Idle-Game-Wireframe?node-id=0%3A1" target="_blank" class="btn btn-dark">Wireframe</a>
+                            <a href="https://people.rit.edu/jf7689/idleGrowth/" target="_blank" class="btn btn-dark">Game Page</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6">
+                    <div class="card">
+                        <div class="card-body text-center">
+                            <img class="img-fluid" src="img/app.png" alt="">     
+                            <h3 class="card-title mb-3">
+                                Stick-To-Anything Inator
+                            </h3>
+                            <ul class="card-text text-center text-sm-start basicInfo">
+                                <li><b>Team Size:</b> 5</li>  
+                                <li><b>Type:</b> App Prototype</li>  
+                                <li><b>Skills:</b> UI Design, UX, Wireframing</li>  
+                                <li><b>Tools:</b> Figma</li>  
+                            </ul>
+                            <p class="card-text text-center text-sm-start collapse" id="appCollapse">
+                            A group project created in a UI/UX class. The premise of the assignmnet was to make an app for a company's product. The team decided to make an app 
+                            representing an interface for a machine that could be attached to any creation by Dr. Doofenshmirtz from the Disney cartoon, Phineas and Ferb. For 
+                            this project we had to create a design document that included a product description, diagrams for the user flow and functional specification,
+                            mood boards, color scheme and etc. I created a mood board and worked with 2 others to create diagrams for the user flow and functional specification.
+                            Then as a group we drew up an initial sketch on paper of the screens and UI we would have. I learned how to use Figma and worked to make a rough 
+                            prototype based off the sketch with another team member. After reviewing the rough prototype, the team decided to add icons for some buttons to help 
+                            indicate their functionality and altered some of the UI to be more consistent between wireframes. I worked with another team member again to create 
+                            a final prototype with interactive buttons that connected the wireframes.
+                            </p>    
+                            <a href="#appCollapse" data-bs-toggle="collapse" class="btn btn-dark">Details</a>
+                            <a href="https://www.figma.com/file/U8fSmPhScAq0iCVKLNOoHe/Inator-Co.-Final-Prototype?node-id=0%3A1" target="_blank" class="btn btn-dark">Wireframe</a>              
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <section class="p-5">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-md">
+                    <h2 class="text-center mb-4">Contact Information</h2>
+                    <ul class="list-group list-group-flush lead">
+                        <li class="list-group-item">
+                            <span class="fw-bold">Phone:</span> (917) 238-3239
+                        </li>
+                        <li class="list-group-item">
+                            <span class="fw-bold">Email:</span> jamesfeng51@gmail.com
+                        </li>
+                        <li class="list-group-item">
+                            <a href="https://www.linkedin.com/in/fengjames/" target="_blank"><span class="fw-bold">LinkedIn:</span> James Feng </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="contact" class="p-5 bg-dark text-white text-center position-relative">
+        <div class="container">
+            <p class="lead">Copyright &copy; James Feng</p>
+            <a href="#" class="position-absolute bottom-0 end-0 p-5">
+                <i class="bi bi-arrow-up-square h1"></i>
+            </a>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" 
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+</body>
+</html>
